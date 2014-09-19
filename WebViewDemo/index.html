@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<title>iScroll demo: barebone</title>
+
+<script type="text/javascript" src="iscroll.js"></script>
+
+<script type="text/javascript">
+
+var myScroll;
+
+function loaded () {
+	//myScroll = new IScroll('#wrapper');
+	var scroller;
+	scroller = new IScroll('#scroller', {
+
+        scrollY: true,
+        scrollX: false,
+        lockDirection: false,
+        preventDefaultException:{ tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|P|DIV)$/ }
+
+
+    });
+}
+
+//document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+</script>
+
+<style>
+#scroller {
+    position: absolute;
+    width:300px;
+    height:300px;
+    overflow:hidden;
+    outline:1px solid red;
+}
+#container {
+    position: absolute;
+    width:300px;
+    height:500px;
+}
+
+</style>
+
+</head>
+<body onload="loaded()">
+
+<div id="scroller">
+    <div id="container">
+        <p>Hi I am implementing a reader with iscroll I whant to add a special mode "Select Text" in this mode i would like to stop scrollin on mousemove How can i acomplish that? Thanks Nicolas</p>
+        <p>Hi I am implementing a reader with iscroll I whant to add a special mode "Select Text" in this mode i would like to stop scrollin on mousemove How can i acomplish that? Thanks Nicolas</p>
+        <p>Hi I am implementing a reader with iscroll I whant to add a special mode "Select Text" in this mode i would like to stop scrollin on mousemove How can i acomplish that? Thanks Nicolas</p>
+        <p>Hi I am implementing a reader with iscroll I whant to add a special mode "Select Text" in this mode i would like to stop scrollin on mousemove How can i acomplish that? Thanks Nicolas</p>
+        <p>Hi I am implementing a reader with iscroll I whant to add a special mode "Select Text" in this mode i would like to stop scrollin on mousemove How can i acomplish that? Thanks Nicolas</p>
+    </div>
+</div>
+</body>
+</html>
