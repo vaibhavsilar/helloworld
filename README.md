@@ -16,3 +16,8 @@ V0.0.8 - cox changes
 V0.0.8.5 - cox
 
 V0.0.8.6 - john commited
+
+for(vari=0;i<length;i++)
+{
+
+}
